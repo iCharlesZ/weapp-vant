@@ -1,0 +1,39 @@
+<!-- pages/cart/index.wxml -->
+<view class="container">
+  <view class="cart">
+    <van-empty wx:if="{{ cartList.length === 0 }}" image="/image/custom-empty-image.png" description="购物车空空如也~" />
+    <van-checkbox-group wx:else value="{{ result }}" custom-class="item-group"  bind:change="onChange">
+      <van-swipe-cell
+        right-width="{{ 65 }}"
+        wx:for="{{ cartList }}"
+        wx:key="index"
+        async-close
+        data-index="{{ index }}"
+        bind:close="onClose">
+        <van-card
+          title="{{ item.title }}"
+          desc="{{ item.desc }}"
+          thumb="{{ item.thumb }}"
+          price="{{ item.price }}"
+          num="{{ item.num }}"
+          data-id="{{ item.id }}"
+          bindtap="onclick"
+          custom-class="van-card"
+        >
+          <view slot="footer">
+            <van-checkbox catch:tap="noop" data-price="{{ item.price }}" name="{{ item.id }}" custom-class="van-card-checkbox" />
+          </view>
+        </van-card>
+        <view slot="right" class="van-swipe-cell__right">删除</view>
+      </van-swipe-cell>
+    </van-checkbox-group>
+
+    <!-- <view class="submitBar"> -->
+      <van-submit-bar price="{{ allPrice }}" button-text="提交订单" bind:submit="onSubmit" tip="{{ true }}" custom-class="van-submit-bar__bar">
+        <van-checkbox value="{{ isAllSelect }}" bind:change="allSelect">全选</van-checkbox>
+        <view slot="tip" bindtap="addAddress">您还未添加收货地址,请先添加收货地址</view>
+      </van-submit-bar>
+    <!-- </view> -->
+    <van-toast id="van-toast" />
+  </view>
+</view>

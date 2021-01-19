@@ -1,0 +1,23 @@
+<!--pages/user/address/add.wxml-->
+<view class="addAddress">
+  <van-cell-group>
+    <van-field
+      value="{{ name }}"
+      label="姓名"
+      placeholder="姓名"
+    />
+    <van-field
+      value="{{ phoneNum }}"
+      label="电话号码"
+      placeholder="电话号码"
+    />
+    <van-field
+      value="{{ address }}"
+      label="详细地址"
+      placeholder="详细地址"
+    />
+  </van-cell-group>
+
+  <van-button type="primary" custom-class="saveBtn" block>保存</van-button>
+  <van-button type="default" custom-class="cancelBtn" block bindtap="cancelBtn">取消</van-button>
+</view>

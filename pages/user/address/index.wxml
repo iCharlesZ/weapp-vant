@@ -1,0 +1,11 @@
+<!-- pages/user/address/index.wxml -->
+<view class="container">
+  <view class="address">
+    <!-- <van-empty description="您还没有添加收货地址" /> -->
+    <van-empty description="您还没有添加收货地址">
+      <van-button round type="primary" class="bottom-button" bind:tap="addAddress">
+        添加收货地址
+      </van-button>
+    </van-empty>
+  </view>
+</view>

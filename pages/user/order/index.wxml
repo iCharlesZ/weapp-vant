@@ -1,0 +1,22 @@
+<!-- pages/user/order/index.wxml -->
+<view class="container">
+  <view class="order">
+    <van-tabs animated>
+      <van-tab title="待付款">
+        <van-empty image="/image/custom-empty-image.png" description="您还没有相关的订单" />
+      </van-tab>
+      <van-tab title="待发货">
+        <van-empty image="/image/custom-empty-image.png" description="您还没有相关的订单" />
+      </van-tab>
+      <van-tab title="待收货">
+        <van-empty image="/image/custom-empty-image.png" description="您还没有相关的订单" />
+      </van-tab>
+      <van-tab title="待评价">
+        <van-empty image="/image/custom-empty-image.png" description="您还没有相关的订单" />
+      </van-tab>
+      <van-tab title="已完成">
+        <van-empty image="/image/custom-empty-image.png" description="您还没有相关的订单" />
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

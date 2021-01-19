@@ -1,0 +1,12 @@
+/* pages/user/address/add.wxss */
+.addAddress {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.addAddress .saveBtn,
+.addAddress .cancelBtn {
+  margin: 20rpx auto;
+  width: 95%;
+}

@@ -1,0 +1,48 @@
+/* pages/cart/index.wxss */
+.cart {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    padding-bottom: 200rpx;
+}
+
+.cart .van-empty__image {
+    width: 200rpx;
+    height: 200rpx;
+    margin-top: 35vw;
+}
+
+.cart .item-group {
+    background-color: #eee;
+}
+
+.cart .van-card {
+    margin: 10rpx 0 10rpx 0;
+    padding-left: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.cart .van-card .van-card-checkbox {
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cart .van-swipe-cell__right {
+    display: inline-block;
+    width: 65px;
+    height: 104px;
+    line-height: 104px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    background-color: #ee0a24;
+}
+
+.cart .van-submit-bar__bar .van-checkbox__label {
+    margin-left: 8rpx;
+}

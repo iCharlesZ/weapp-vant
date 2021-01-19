@@ -1,0 +1,9 @@
+/* pages/user/authorize/index.wxss */
+.authorize {
+    padding: 0 5vw;
+}
+
+.authorize>view {
+    margin: 50rpx 0;
+    font-size: 28rpx;
+}
